@@ -1,0 +1,212 @@
+
+/* 
+font-size in em
+font-weight in only number  eg 400 or 600 according to heading
+
+ */
+
+body{
+    background-color: rgb(192, 209, 204);
+    text-align: justify;
+    
+    /* its justify means it can arrange paragarph iine or any text same line  and it fit with all of the screen */
+    font-family: 'Nunito'
+}
+
+.aboutme{
+    color: rgb(36, 167, 160);
+}
+
+#first-imge{
+    height: 700px;
+    width: 80%;
+    margin: 80px;
+}
+
+
+/* Advanced sudo-selectors */
+h1:hover{
+    color: rgb(33, 148, 194);
+}
+
+textarea ~ button{
+    color: #222;
+    /* here right after textarea change the color of button ie use this ~ symbol */
+}
+
+ul > li{
+    color: chocolate;
+}
+
+
+
+
+/* Attribute seletctors */
+img[src*="./images/"]{
+    border: 7px solid black;
+    /* in this we select all images in img attibue */
+}
+
+h2[class~="subtitle"]{
+    background-color: #222;
+    color: antiquewhite;
+}
+
+
+
+
+
+/* Background Grdient property */
+
+.gradient-property{
+    width: 70%;
+    height: 400px;
+    background: linear-gradient(to right, blue, red);
+    /* background: linear-gradient(215deg, blue, red); */
+    /* background: radial-gradient(blue, red, green); */
+
+
+    background-size: cover;
+    /*1st one is simple here crated cover and added gradient color to cover and end of color is to right side of the 
+    cover ie red is to right */
+
+    /* 2nd is covering the degree of color so try out */
+
+    /* 3rd is rounded shaped color try it  and add shape before staring color, you can also gve to % to the color or rgba*/
+
+    float: right;
+
+}
+
+
+
+
+/*  BOX MODEL */
+
+
+/* 1. Border  */
+
+/* in border there is simple 3 steps as shown in 
+above attribute selectors 
+1st one is size , 
+2nd is style , 
+3rd is color */
+
+
+/* 2. Margin & Padding */
+
+/* Margin is distance betw actual your webpage-border and boder as shown in img-1 eg. */
+
+/* padding is distance betw border and content as shown in eg. */
+
+#second_img{
+
+    height: 500px;
+    width: 70vw;
+
+    padding: 20px;
+}
+
+
+/* 3.  Float & Display */
+
+/* you can float text or img or anything */
+
+/* chek gradient-property class for floating */
+
+
+
+
+
+/* FlexBox */
+
+.container{
+    background-color: aliceblue;
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+
+
+    /* flexbox properites    direction and wrap*/
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container-item{
+    width: 50px;
+    color: #fff;
+    background-color: rgb(20, 37, 2);
+    margin: 10px;
+    text-align: center;
+    font-size: 25px;
+    line-height: 50px;
+}
+
+
+
+
+/* GRID */
+
+.grid-container{
+    height: 400px;
+    background-color: darkgray;
+    margin: 10px;
+
+
+    display: grid;
+    grid-template-columns: auto auto;
+    /* grid-template-rows: auto auto; */
+}
+
+.grid-item{
+    width: 50px;
+    line-height: 60px;
+    color: #222;
+    background-color: darkkhaki;
+    text-align: center;
+    margin: 10px;
+    font-size: 20px;
+
+}
+
+
+
+/* Transition property */
+
+input, textarea{
+    display: block;
+    margin: 10px;
+
+}
+
+.submit-btn{
+    margin: 10px;
+    height: 30px;
+    width: 80px;
+    justify-content: center;
+    font-size: 15px;
+    font-weight: 600;
+    background-color: floralwhite;
+
+    /* -webkit-transition: all 500ms ease; */
+    /* -moz-transition: all 500ms ease; */
+}
+
+.submit-btn:hover{
+    background-color: rgb(66, 66, 233);
+    color: white;
+    
+
+
+
+    /* transform: skew(30deg); */
+    transform: rotate(-30deg);
+    
+
+    
+
+}
+
